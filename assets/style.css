@@ -1,6 +1,9 @@
 * {
     padding: 0;
     margin: 0;
+    font-family: 'Mukta', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
+    scroll-behavior: smooth
 }
 
 .navbar {
@@ -25,4 +28,49 @@
 
 .bi, .bi-list {
     color: #fff;
+}
+
+#heroImg {
+    position: absolute;
+    z-index: -1;
+}
+
+.header-title {
+    position: absolute;
+    color: white;
+    -webkit-text-stroke: 2px black;
+    font-size: 4em;
+    font-weight: bold;
+    top: 500px;
+}
+
+#intro {
+    margin-top: 560px;
+}
+
+#introDesc {
+    text-align: center;
+}
+
+.intro-number {
+    font-size: 4em;
+    font-weight: bold;
+    color: #8d887a;
+}
+
+.intro-title {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #0f2232;
+}
+
+
+
+footer {
+    background-color: #0f2232;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 1em;
+    font-weight: bold;
 }
