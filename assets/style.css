@@ -1,0 +1,28 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.navbar {
+    background-color: #0f2232;
+    overflow: hidden;
+    height: 10vh;
+    box-shadow: 0 0 50px gray;
+}
+
+.navbar-brand {
+    padding-left: 30px;
+}
+
+.navbar-toggler {
+    background: #8d887a;
+    z-index: 100;
+    min-width: 5vh;
+    height: 5vh;
+    margin: 0 40px;
+    border: 0;
+}
+
+.bi, .bi-list {
+    color: #fff;
+}
