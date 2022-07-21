@@ -8,10 +8,15 @@
 body {
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
 }
 
 h1 {
     font-size: 5.5rem;
+}
+
+h2 {
+    font-size: 3.5rem;
 }
 
 .mw-95 {
@@ -92,12 +97,46 @@ h1 {
     font-size: 3rem;
 }
 
+.table-fs {
+    font-size: 2.5rem;
+}
+
+.table-green {
+    color: green;
+}
+
+.table-red {
+    color: red;
+}
+
+#green-bubble {
+    background-color: #efe;
+    color: green;
+    border-radius: 10px;
+    font-size: 3rem;
+    width: 90%;
+    margin: 20px auto 0 auto;
+}
+
+#green-bubble p {
+    padding: 20px;
+}
+
+#RD p {
+    font-size: 3rem;
+}
+
+#faq {
+    background-color: #fcfaf6;
+    height: 800px;
+}
+
 
 footer {
     background-color: #0f2232;
     color: white;
     padding: 20px;
     text-align: center;
-    font-size: 1em;
+    font-size: 30px;
     font-weight: bold;
 }
