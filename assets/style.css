@@ -115,7 +115,6 @@ h2 {
 
 #green-bubble {
     background-color: #efe;
-    color: green;
     border-radius: 10px;
     font-size: 3rem;
     width: 90%;
@@ -124,6 +123,26 @@ h2 {
 
 #green-bubble p {
     padding: 20px;
+    color: green !important;
+}
+
+#RD h1 {
+    font-size: 60px;
+    font-weight: bold;
+}
+
+#RD h2 {
+    font-size: 48px;
+    font-weight: bold;
+}
+
+#RD h3 {
+    font-size: 40px;
+}
+
+#RD h4 {
+    font-size: 35px;
+    font-weight: bold;
 }
 
 #RD p {
