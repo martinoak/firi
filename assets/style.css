@@ -105,6 +105,10 @@ h2 {
 
 }
 
+#versus svg {
+    margin: 0 auto;
+}
+
 .text-check {
     font-size: 3rem;
 }
