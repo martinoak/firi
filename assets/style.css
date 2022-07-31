@@ -8,7 +8,6 @@
 body {
     margin: 0;
     padding: 0;
-    overflow-x: hidden;
 }
 
 h1 {
@@ -33,7 +32,6 @@ h2 {
 
 .navbar {
     background-color: #0f2232;
-    overflow: hidden;
     height: 10vh;
     box-shadow: 0 0 50px gray;
 }
@@ -52,7 +50,7 @@ h2 {
 }
 
 #dropdown {
-    z-index: 600;
+    z-index: 99999999999999;
 }
 
 #dropdown ul li a {
@@ -61,6 +59,10 @@ h2 {
 
 .bi, .bi-list {
     color: #fff;
+}
+
+#hero {
+    z-index: -100;
 }
 
 #heroImg {
