@@ -51,6 +51,14 @@ h2 {
     border: 0;
 }
 
+#dropdown {
+    z-index: 600;
+}
+
+#dropdown ul li a {
+    font-size: 40px;
+}
+
 .bi, .bi-list {
     color: #fff;
 }
@@ -141,7 +149,7 @@ h2 {
 }
 
 #RD h4 {
-    font-size: 35px;
+    font-size: 38px;
     font-weight: bold;
 }
 
@@ -154,22 +162,9 @@ h2 {
     height: 800px;
 }
 
-#accordion {
-    max-width: 90%;
-    margin: 0 auto;
-    font-size: 42px !important;
+.accordion-collapse-heading {
+    font-size: 40px;
 }
-
-.accordion-header {
-    margin: 10px 0;
-    line-height: 10vh;
-}
-
-.accordion-button {
-    font-size: 42px;
-    border-radius: 20px;
-}
-
 
 footer {
     background-color: #0f2232;
