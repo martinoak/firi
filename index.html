@@ -18,6 +18,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/flowbite@1.5.1/dist/flowbite.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
 
 </head>
 <body>
@@ -386,7 +387,7 @@
             </button>
         </h2>
         <div id="accordion-collapse-body-1" class="hidden" aria-labelledby="accordion-collapse-heading-1">
-            <div class="p-5 font-light border border-b-0 border-gray-200 dark:border-gray-700 dark:bg-gray-900">
+            <div class="p-5 font-light border border-b-0 border-gray-200 dark:border-gray-700 ">
                 <p class="mb-2 text-gray-500">Každá investice je spojena s určitou mírou rizika.
                     Investice do nemovitostí je dlouhodobě považována za nejbezpečnější formu investování.
                     Za peníze investorů jsou ihned nakupovány nové nemovitosti nebo jsou použity na realizace projektů.
@@ -481,20 +482,23 @@
         </div>
     </div>
 </section>
-<section id="contact" class="bg-sky-900">
-    <div class="mw-95 mx-auto">
-        <p class="text-6xl fw-bold my-3">Spojme se!</p>
+<section id="contact">
+    <div class="mw-95 mx-auto text-white">
+        <p class="text-6xl fw-bold py-5 rounded">Spojme se!</p>
         <form class="text-5xl mb-5">
             <div class="mb-6">
-                <label for="email" class="block mb-2 font-medium text-gray-900 dark:text-gray-300">Váš e-mail</label>
-                <input type="email" id="email" class="bg-gray-50 border border-gray-300 text-gray-900 text-4xl rounded-lg block w-full p-2.5" placeholder="name@flowbite.com" required>
+                <label for="email" class="block mb-2 font-medium">Váš e-mail</label>
+                <input type="email" id="email" class="bg-gray-50 border border-gray-300 text-3xl rounded-lg block w-full p-2.5" placeholder="name@flowbite.com" required>
             </div>
             <div class="mb-6">
-                <label for="password" class="block mb-2 font-medium text-gray-900 dark:text-gray-300">Vaše jméno</label>
-                <input type="password" id="password" class="bg-gray-50 border border-gray-300 text-gray-900 text-4xl rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" required>
+                <label for="name" class="block mb-2 font-medium">Vaše jméno</label>
+                <input type="text" id="name" class="bg-gray-50 border border-gray-300 text-3xl rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" required>
             </div>
-
-            <button type="submit" class="text-white bg-blue-700 font-medium rounded-lg text-4xl w-full sm:w-auto px-5 py-2.5 mb-5 text-center">Odeslat</button>
+            <div class="mb-6">
+                <label for="message" class="block mb-2 font-medium">Vaše zpráva</label>
+                <textarea rows="4" type="text" id="message" class="bg-gray-50 border border-gray-300 text-3xl rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"></textarea>
+            </div>
+            <button type="submit" class="text-white font-medium rounded-lg text-4xl w-full sm:w-auto px-5 py-2.5 mb-5 text-center" style="background-color: #8d887a">Odeslat</button>
         </form>
     </div>
 </section>

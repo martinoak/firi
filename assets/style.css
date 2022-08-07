@@ -177,6 +177,10 @@ h2 {
     font-size: 40px;
 }
 
+#contact {
+    background-color: #0f2232 !important;
+}
+
 footer {
     background-color: #0f2232;
     color: white;
