@@ -256,7 +256,7 @@ footer {
     }
 
     #graf {
-        width: 70%;
+        width: 50%;
         margin: auto;
     }
 
@@ -287,7 +287,13 @@ footer {
     }
 
     #thankyouImg {
-        width: 40% !important;
+        width: 50% !important;
+        height: auto;
+        margin: 0 0 20px;
+    }
+
+    #thankyouTitle {
+        font-size: 30px !important;
     }
 
     #accordion-collapse {
