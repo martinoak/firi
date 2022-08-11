@@ -534,20 +534,20 @@
             </svg>
             <a href="tel:+420725879471" class="ps-3">+420 725 879 471</a></h3>
         <p class="fw-bold py-3 rounded">Nebo mi napište e-mail:</p>
-        <form class="mb-5 text-xl">
+        <form class="mb-5 text-xl" id="form">
             <div class="mb-6">
                 <label for="email" class="block mb-2 font-medium">Váš e-mail</label>
-                <input type="email" id="email" class="bg-gray-50 border border-gray-300 text-xl rounded-lg block w-full p-2.5" placeholder="jan@novak.cz" required>
+                <input type="email" id="email" class="bg-gray-50 border border-gray-300 text-xl text-black rounded-lg block w-full p-2.5" placeholder="jan@novak.cz" required>
             </div>
             <div class="mb-6">
                 <label for="name" class="block mb-2 font-medium">Vaše jméno</label>
-                <input type="text" id="name" class="bg-gray-50 border border-gray-300 text-xl rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" placeholder="Jan Novák" required>
+                <input type="text" id="name" class="bg-gray-50 border border-gray-300 text-xl rounded-lg text-black focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" placeholder="Jan Novák" required>
             </div>
             <div class="mb-6">
-                <label for="message" class="block mb-2 font-medium">Vaše zpráva</label>
-                <textarea rows="4" type="text" id="message" class="bg-gray-50 border border-gray-300 text-xl text-black rounded-lg block w-full p-2.5" placeholder="Dobrý den..." autocomplete="off"></textarea>
+                <label for="textmessage" class="block mb-2 font-medium">Vaše zpráva</label>
+                <textarea rows="4" type="text" id="textmessage" class="bg-gray-50 border border-gray-300 text-xl text-black rounded-lg block w-full p-2.5" placeholder="Dobrý den..." autocomplete="off"></textarea>
             </div>
-            <button type="submit" class="text-white font-medium rounded-lg text-xl w-full sm:w-auto px-5 py-2.5 mb-5 text-center" style="background-color: #8d887a">Odeslat</button>
+            <button id="submitButton" type="submit" class="text-white font-medium rounded-lg text-xl w-full sm:w-auto px-5 py-2.5 mb-5 text-center" style="background-color: #8d887a">Odeslat</button>
         </form>
     </div>
 </section>

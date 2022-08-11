@@ -1,3 +1,7 @@
-.idea/
-index_old.html
+.idea
+.env
+
 /assets/style_old.css
+
+vendor/
+composer.lock
