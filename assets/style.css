@@ -33,7 +33,7 @@ h2 {
 
 .navbar {
     background-color: #0f2232;
-    height: 10vh;
+    height: 100px;
     box-shadow: 0 0 50px gray;
 }
 
@@ -117,6 +117,12 @@ h2 {
 
 .icon-check {
     margin: auto;
+}
+
+#investButton {
+    width: 70%;
+    box-shadow: 5px 5px gray;
+    font-size: 18px;
 }
 
 #versus svg {
@@ -253,6 +259,12 @@ footer {
         width: 70%;
         margin: auto;
     }
+
+    #investButton {
+        width: 60%;
+        box-shadow: 5px 5px gray;
+        font-size: 18px;
+    }
 }
 
 @media screen and (min-width: 1024px) {
@@ -267,6 +279,12 @@ footer {
     #graf {
         width: 50%;
         margin: auto;
+    }
+
+    #investButton {
+        width: 50%;
+        box-shadow: 5px 5px gray;
+        font-size: 18px;
     }
 
     #thankyouImg {
