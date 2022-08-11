@@ -50,15 +50,11 @@ h2 {
 }
 
 #dropdown {
-    z-index: 99;
+    z-index: 99999999999999;
 }
 
 #dropdown ul li a {
     font-size: 40px;
-}
-
-#dropdownButton {
-    display: flex;
 }
 
 .bi, .bi-list {
