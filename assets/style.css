@@ -37,10 +37,6 @@ h2 {
     box-shadow: 0 0 50px gray;
 }
 
-.navbar-brand {
-    padding-left: 30px;
-}
-
 .navbar-toggler {
     background: #8d887a;
     z-index: 100;
@@ -56,6 +52,7 @@ h2 {
 
 #dropdownButton {
     display: flex;
+    margin: 0;
 }
 
 @media screen and (max-width: 320px) {
@@ -230,6 +227,10 @@ footer {
 @media screen and (min-width: 768px) {
     #dropdownButton {
         display: none;
+    }
+
+    .navbar-brand {
+        padding-left: 30px;
     }
 
     #navbarDesktop {
