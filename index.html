@@ -2,10 +2,10 @@
 <html lang="cs">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="stylesheet" href="assets/css/bootstrap.css">
-    <link rel="stylesheet" href="assets/style_old.css">
+    <link rel="stylesheet" href="assets/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
 
     <link rel="stylesheet" href="https://unpkg.com/flowbite@1.5.1/dist/flowbite.min.css" />
@@ -27,47 +27,483 @@
 <header>
     <nav class="navbar">
         <a class="navbar-brand" href="#">
-            <img src="assets/images/fi-reality-1.png" style="width: 200px;height: auto" alt="">
+            <img src="assets/images/fi-reality-1.png" width="200" height="auto" alt="">
         </a>
         <button id="dropdownButton" data-dropdown-toggle="dropdown" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-            <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
                 <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
             </svg>
         </button>
         <div id="dropdown" class="hidden z-10 w-1/2 rounded divide-y divide-gray-100 shadow text-white bg-gray-700">
-            <ul class="py-1 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownButton">
+            <ul class="py-1 text-sm text-gray-700" aria-labelledby="dropdownButton">
                 <li>
-                    <a href="#intro" class="block py-5 px-4 bg-gray-600 text-white">Kdo jsme</a>
+                    <a href="#intro" class="block py-3 px-4 bg-gray-600 text-white">Kdo jsme</a>
                 </li>
                 <li>
-                    <a href="#primary" class="block py-5 px-4 bg-gray-600 text-white">Výhody investování</a>
+                    <a href="#primary" class="block py-3 px-4 bg-gray-600 text-white">Výhody investování</a>
                 </li>
                 <li>
-                    <a href="#RD" class="block py-5 px-4 bg-gray-600 text-white">Ukázkové projekty</a>
+                    <a href="#RD" class="block py-3 px-4 bg-gray-600 text-white">Ukázkové projekty</a>
                 </li>
                 <li>
-                    <a href="#faq" class="block py-5 px-4 bg-gray-600 text-white">Často kladené otázky</a>
+                    <a href="#faq" class="block py-3 px-4 bg-gray-600 text-white">Často kladené otázky</a>
                 </li>
                 <li>
-                    <a href="#contact" class="block py-5 px-4 bg-gray-600 text-white">Kontakt</a>
+                    <a href="#contact" class="block py-3 px-4 bg-gray-600 text-white">Kontakt</a>
                 </li>
             </ul>
         </div>
     </nav>
-    <div class="pos-f-t">
-        <div class="collapse navbar-collapse" id="navbarToggleExternalContent">
-            <ul class="nav navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Features</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Pricing</a>
-                </li>
-            </ul>
+</header>
+<section id="hero">
+    <img id="heroImg" src="assets/images/pexels-binyamin-mellish-186077.jpg" alt="" class="img-fluid">
+    <!--<div class="container-fluid hero">
+        <h1 class="header-title" style="top: 200px">Vítejte na stránkách FIRI!</h1>
+    </div>-->
+</section>
+<section id="intro">
+    <div class="container">
+        <div class="row" id="introDesc">
+            <div class="col-12 pt-2">
+                <h2 class="intro-number">1</h2>
+                <h3 class="intro-title">Rozhodnete se</h3>
+                <p class="intro-desc">
+                    v jaké výši a na jak dlouho chcete investovat.
+                </p>
+            </div>
+            <hr style="width: 40%; margin: 0 auto">
+            <div class="col-12">
+                <h2 class="intro-number">2</h2>
+                <h3 class="intro-title">Zhotovíme smlouvu</h3>
+                <p class="intro-desc">
+                    o úpisu dluhopisů, kterou podepíšete a pošlete nám zpět.
+                </p>
+            </div>
+            <hr style="width: 40%; margin: 0 auto">
+            <div class="col-12">
+                <h2 class="intro-number">3</h2>
+                <h3 class="intro-title">Pošlete peníze</h3>
+                <p class="intro-desc">
+                    a my Vám zašleme dlouhopisy v plné výši.
+                </p>
+            </div>
+            <hr style="width: 40%; margin: 0 auto">
+            <div class="col-12">
+                <h2 class="intro-number">4</h2>
+                <h3 class="intro-title">Vyplatíme Vás</h3>
+                <p class="intro-desc">
+                    po uplynutí zvolené doby. Vrátíme Vám vaši investici včetně úroků za každý rok.
+                </p>
+            </div>
+            <hr style="width: 40%; margin: 0 auto">
         </div>
     </div>
-</header>
+</section>
+<section id="checks">
+    <div class="container primary" >
+        <div class="row my-5">
+            <div class="col-2 justify-content-center">
+                <a><svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="#8d887a" class="icon-check" viewBox="0 0 16 16">
+                    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+                </svg></a>
+            </div>
+            <div class="col-10 text-check px-2">
+                Nemovitosti jsou <strong>ve vlastnictví FI Realitní investice</strong> (eminenta dluhopisů)
+            </div>
+        </div>
+        <div class="row my-5">
+            <div class="col-2 justify-content-center">
+                <a><svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="#8d887a" class="icon-check" viewBox="0 0 16 16">
+                    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+                </svg></a>
+            </div>
+            <div class="col-10 text-check px-2">
+                Veškeré dluhopisy jsou <strong>pojištěné</strong>
+            </div>
+        </div>
+        <div class="row my-5">
+            <div class="col-2 justify-content-center">
+                <a><svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="#8d887a" class="icon-check" viewBox="0 0 16 16">
+                    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+                </svg></a>
+            </div>
+            <div class="col-10 text-check px-2">
+                Velké množství menších nemovitostí po celé ČR - <strong>diverzifikace rizik</strong>
+            </div>
+        </div>
+        <div class="row my-5">
+            <div class="col-2 justify-content-center">
+                <a><svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="#8d887a" class="icon-check" viewBox="0 0 16 16">
+                    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+                </svg></a>
+            </div>
+            <div class="col-10 text-check px-2">
+                Možnost diverzifikace na 2, 3 nebo 5 let <strong>s fixním zhodnocením až 8% p.a.</strong>
+            </div>
+        </div>
+        <div class="row my-5">
+            <div class="col-2 justify-content-center">
+                <a><svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="#8d887a" class="icon-check" viewBox="0 0 16 16">
+                    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+                </svg></a>
+            </div>
+            <div class="col-10 text-check px-2">
+                <strong>Lepší zhodnocení</strong> než při pronájmu bytu
+            </div>
+        </div>
+        <div class="row my-5">
+            <div class="col-2 justify-content-center">
+                <a><svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="#8d887a" class="icon-check" viewBox="0 0 16 16">
+                    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+                </svg></a>
+            </div>
+            <div class="col-10 text-check px-2">
+                <strong>Žádné</strong> vstupní poplatky
+            </div>
+        </div>
+        <img src="assets/images/graf.jpg" class="w-full" alt="">
+    </div>
+</section>
+<section class="primary" id="primary">
+    <h1 class="mt-5 mw-95 m-auto fw-bold" style="font-size: 35px">Výhody nákupu dluhopisů</h1>
+    <p class="intro-desc mw-95 m-auto">Většina lidí chápe investici do realit jako bezpečný způsob investování finančních prostředků, ale ne každý si může nemovitost dovolit koupit nebo nechce podstupovat starosti spojené s vlastnictvím a pronajímáním nemovitosti.</p>
+    <p class="intro-desc mw-95 m-auto fw-bold mt-5" style="font-size: 35px;line-height: 30px">Řešením jsou dluhopisy od 50 000 Kč s fixním výnosem až 8 % pa.</p>
+    <button onclick="window.location.href='#contact'" class="btn btn-primary d-block text-center m-auto mt-5 px-4 py-2" style="width: 70%;box-shadow: 5px 5px gray; font-size: 18px">Chci investovat do dluhopisů</button>
+    <!--<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+    <div id="default-carousel" class="relative" data-carousel="static">
+        <div class="relative my-5 overflow-hidden rounded-lg bg-orange-100 text-black" style="height: 500px">
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <p class="absolute text-center text-black text-4xl block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 mw-95">
+                    <br />
+                    Před 4 lety jsem zdědila peníze po babičce a za část peněz jsem si koupila byt 2 + 1, který
+                    pronajímám. Za tu dobu jsem měla 3 nájemníky a celkem 7 měsíců byl byt neobsazen. Již 2x jsem
+                    musela malovat, a dokonce jsem řešila vytopení sousedů. Díky FI Realitní Investice mohu své další
+                    peníze zhodnocovat bezpečně také v realitách, ale bez jakýchkoliv starostí.
+                    <br />
+                    <br />
+                    <strong>Magdaléna Neuwirthová</strong>
+                    <br />
+                    Plzeň
+                    <br />
+                    &nbsp;
+                </p>
+            </div>
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <p class="absolute text-center text-black text-4xl block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 mw-95">
+                    <br />
+                    V minulosti jsem měl vložené peníze v podílových fondech, kde jsem si ukládal 5000 Kč měsíčně po
+                    dobu 10 let. Slibovali mi zhodnocení minimálně 8% a místo 900 000 Kč jsem vybral necelých 650 000
+                    Kč. Proto jsem rád, že tady mám fixní zhodnocení a přesně vím, kolik na konci dostanu.
+                    <br />
+                    <br />
+                    <strong>Jan Gřonka</strong>
+                    <br />
+                    Ostrava
+                    <br />
+                    &nbsp;
+                </p>
+            </div>
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <p class="absolute text-center text-black text-4xl block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 mw-95">
+                    <br />
+                    Jelikož jsem zaměřena na ekologii a udržitelné zdroje, tak se mi líbí myšlenka, že FIRI opravuje starší
+                    nemovitosti a díky tomu můžou lidé najít nové bydlení za dostupnou cenu. Proto jsem i vložila peníze
+                    do dluhopisů.
+                    <br />
+                    <br />
+                    <strong>Lucie Stejskalová</strong>
+                    <br />
+                    Třebíč
+                    <br />
+                    &nbsp;
+                </p>
+            </div>
+        </div>
+        <div class="absolute z-30 flex space-x-3 -translate-x-1/2 bottom-5 left-1/2">
+            <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 1" data-carousel-slide-to="0"></button>
+            <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
+            <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
+        </div>
+    </div>-->
+</section>
+<section id="versus">
+    <div class="container-fluid primary">
+        <h1 class="text-center mt-5 fw-bold" style="font-size: 30px">Koupě bytu vs. investice do dluhopisů</h1>
+        <p class="my-2" style="font-size: 1rem; max-width: 90%">
+            Ukažme si vaši investici na příkladu <strong>bytu s hodnotou 2,5 mil. Kč</strong>,
+            který byste pronajímali <strong>za 12 000 Kč měsíčně</strong> a porovnejme ji s
+            <strong>investicí do dluhopisů FI Realitní investice.</strong>
+        </p>
+    </div>
+    <div class="container-fluid">
+        <div class="row text-center py-4">
+            <div class="col-6 fw-bold table-fs"></div>
+            <div class="col-3 fw-bold table-fs">Nákup<br /> bytu</div>
+            <div class="col-3 fw-bold table-fs">Nákup dluhopisů</div>
+        </div>
+        <div class="row text-center py-4">
+            <div class="col-6 table-fs">Návratnost investice</div>
+            <div class="col-3 table-fs table-red mx-auto">Minimálně 18 let</div>
+            <div class="col-3 table-fs table-green">Méně než 14 let</div>
+        </div>
+        <div class="row text-center py-4">
+            <div class="col-6 table-fs">Starosti s koupí bytu</div>
+            <div class="col-3 table-fs table-red">
+                <a><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="red" class="bi bi-emoji-frown" viewBox="0 0 16 16">
+                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                    <path d="M4.285 12.433a.5.5 0 0 0 .683-.183A3.498 3.498 0 0 1 8 10.5c1.295 0 2.426.703 3.032 1.75a.5.5 0 0 0 .866-.5A4.498 4.498 0 0 0 8 9.5a4.5 4.5 0 0 0-3.898 2.25.5.5 0 0 0 .183.683zM7 6.5C7 7.328 6.552 8 6 8s-1-.672-1-1.5S5.448 5 6 5s1 .672 1 1.5zm4 0c0 .828-.448 1.5-1 1.5s-1-.672-1-1.5S9.448 5 10 5s1 .672 1 1.5z"/>
+                </svg></a>
+            </div>
+            <div class="col-3 table-fs table-green">
+                <a><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="green" class="bi bi-emoji-smile" viewBox="0 0 16 16">
+                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                    <path d="M4.285 9.567a.5.5 0 0 1 .683.183A3.498 3.498 0 0 0 8 11.5a3.498 3.498 0 0 0 3.032-1.75.5.5 0 1 1 .866.5A4.498 4.498 0 0 1 8 12.5a4.498 4.498 0 0 1-3.898-2.25.5.5 0 0 1 .183-.683zM7 6.5C7 7.328 6.552 8 6 8s-1-.672-1-1.5S5.448 5 6 5s1 .672 1 1.5zm4 0c0 .828-.448 1.5-1 1.5s-1-.672-1-1.5S9.448 5 10 5s1 .672 1 1.5z"/>
+                </svg></a>
+            </div>
+        </div>
+        <div class="row text-center py-4">
+            <div class="col-6 table-fs">Investice do případné rekonstrukce</div>
+            <div class="col-3 table-fs table-red">
+                <a><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="red" class="bi bi-emoji-frown" viewBox="0 0 16 16">
+                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                    <path d="M4.285 12.433a.5.5 0 0 0 .683-.183A3.498 3.498 0 0 1 8 10.5c1.295 0 2.426.703 3.032 1.75a.5.5 0 0 0 .866-.5A4.498 4.498 0 0 0 8 9.5a4.5 4.5 0 0 0-3.898 2.25.5.5 0 0 0 .183.683zM7 6.5C7 7.328 6.552 8 6 8s-1-.672-1-1.5S5.448 5 6 5s1 .672 1 1.5zm4 0c0 .828-.448 1.5-1 1.5s-1-.672-1-1.5S9.448 5 10 5s1 .672 1 1.5z"/>
+                </svg></a>
+            </div>
+            <div class="col-3 table-fs table-green">
+                <a><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="green" class="bi bi-emoji-smile" viewBox="0 0 16 16">
+                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                    <path d="M4.285 9.567a.5.5 0 0 1 .683.183A3.498 3.498 0 0 0 8 11.5a3.498 3.498 0 0 0 3.032-1.75.5.5 0 1 1 .866.5A4.498 4.498 0 0 1 8 12.5a4.498 4.498 0 0 1-3.898-2.25.5.5 0 0 1 .183-.683zM7 6.5C7 7.328 6.552 8 6 8s-1-.672-1-1.5S5.448 5 6 5s1 .672 1 1.5zm4 0c0 .828-.448 1.5-1 1.5s-1-.672-1-1.5S9.448 5 10 5s1 .672 1 1.5z"/>
+                </svg></a>
+            </div>
+        </div>
+        <div class="row text-center py-4">
+            <div class="col-6 table-fs">Hledání nájemníků</div>
+            <div class="col-3 table-fs table-red">
+                <a><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="red" class="bi bi-emoji-frown" viewBox="0 0 16 16">
+                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                    <path d="M4.285 12.433a.5.5 0 0 0 .683-.183A3.498 3.498 0 0 1 8 10.5c1.295 0 2.426.703 3.032 1.75a.5.5 0 0 0 .866-.5A4.498 4.498 0 0 0 8 9.5a4.5 4.5 0 0 0-3.898 2.25.5.5 0 0 0 .183.683zM7 6.5C7 7.328 6.552 8 6 8s-1-.672-1-1.5S5.448 5 6 5s1 .672 1 1.5zm4 0c0 .828-.448 1.5-1 1.5s-1-.672-1-1.5S9.448 5 10 5s1 .672 1 1.5z"/>
+                </svg></a>
+            </div>
+            <div class="col-3 table-fs table-green">
+                <a><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="green" class="bi bi-emoji-smile" viewBox="0 0 16 16">
+                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                    <path d="M4.285 9.567a.5.5 0 0 1 .683.183A3.498 3.498 0 0 0 8 11.5a3.498 3.498 0 0 0 3.032-1.75.5.5 0 1 1 .866.5A4.498 4.498 0 0 1 8 12.5a4.498 4.498 0 0 1-3.898-2.25.5.5 0 0 1 .183-.683zM7 6.5C7 7.328 6.552 8 6 8s-1-.672-1-1.5S5.448 5 6 5s1 .672 1 1.5zm4 0c0 .828-.448 1.5-1 1.5s-1-.672-1-1.5S9.448 5 10 5s1 .672 1 1.5z"/>
+                </svg></a>
+            </div>
+        </div>
+        <div class="row text-center py-4">
+            <div class="col-6 table-fs">Problémy s neplatiči</div>
+            <div class="col-3 table-fs table-red">
+                <a><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="red" class="bi bi-emoji-frown" viewBox="0 0 16 16">
+                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                    <path d="M4.285 12.433a.5.5 0 0 0 .683-.183A3.498 3.498 0 0 1 8 10.5c1.295 0 2.426.703 3.032 1.75a.5.5 0 0 0 .866-.5A4.498 4.498 0 0 0 8 9.5a4.5 4.5 0 0 0-3.898 2.25.5.5 0 0 0 .183.683zM7 6.5C7 7.328 6.552 8 6 8s-1-.672-1-1.5S5.448 5 6 5s1 .672 1 1.5zm4 0c0 .828-.448 1.5-1 1.5s-1-.672-1-1.5S9.448 5 10 5s1 .672 1 1.5z"/>
+                </svg></a>
+            </div>
+            <div class="col-3 table-fs table-green">
+                <a><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="green" class="bi bi-emoji-smile" viewBox="0 0 16 16">
+                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                    <path d="M4.285 9.567a.5.5 0 0 1 .683.183A3.498 3.498 0 0 0 8 11.5a3.498 3.498 0 0 0 3.032-1.75.5.5 0 1 1 .866.5A4.498 4.498 0 0 1 8 12.5a4.498 4.498 0 0 1-3.898-2.25.5.5 0 0 1 .183-.683zM7 6.5C7 7.328 6.552 8 6 8s-1-.672-1-1.5S5.448 5 6 5s1 .672 1 1.5zm4 0c0 .828-.448 1.5-1 1.5s-1-.672-1-1.5S9.448 5 10 5s1 .672 1 1.5z"/>
+                </svg></a>
+            </div>
+        </div>
+        <div class="row text-center py-4">
+            <div class="col-6 table-fs">Opravy poškozených věcí</div>
+            <div class="col-3 table-fs table-red">
+                <a><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="red" class="bi bi-emoji-frown" viewBox="0 0 16 16">
+                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                    <path d="M4.285 12.433a.5.5 0 0 0 .683-.183A3.498 3.498 0 0 1 8 10.5c1.295 0 2.426.703 3.032 1.75a.5.5 0 0 0 .866-.5A4.498 4.498 0 0 0 8 9.5a4.5 4.5 0 0 0-3.898 2.25.5.5 0 0 0 .183.683zM7 6.5C7 7.328 6.552 8 6 8s-1-.672-1-1.5S5.448 5 6 5s1 .672 1 1.5zm4 0c0 .828-.448 1.5-1 1.5s-1-.672-1-1.5S9.448 5 10 5s1 .672 1 1.5z"/>
+                </svg></a>
+            </div>
+            <div class="col-3 table-fs table-green">
+                <a><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="green" class="bi bi-emoji-smile" viewBox="0 0 16 16">
+                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                    <path d="M4.285 9.567a.5.5 0 0 1 .683.183A3.498 3.498 0 0 0 8 11.5a3.498 3.498 0 0 0 3.032-1.75.5.5 0 1 1 .866.5A4.498 4.498 0 0 1 8 12.5a4.498 4.498 0 0 1-3.898-2.25.5.5 0 0 1 .183-.683zM7 6.5C7 7.328 6.552 8 6 8s-1-.672-1-1.5S5.448 5 6 5s1 .672 1 1.5zm4 0c0 .828-.448 1.5-1 1.5s-1-.672-1-1.5S9.448 5 10 5s1 .672 1 1.5z"/>
+                </svg></a>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="green-bubble">
+    <p class="text-center primary">Díky tomu, že v aukcích a výkupech nakoupíme nemovitosti hluboko pod tržní cenou a
+        následnou rekonstrukcí nemovitost ještě zhodnotíme, generujeme z každé nemovitosti
+        velmi zajímavé zhodnocení, o které se formou dluhopisů dělíme s našimi investory.</p>
+</section>
+<section id="RD" class="primary mt-5">
+    <h1 class="ps-2">RD Rokytnice</h1>
+    <img src="https://thermo-plus.cz/img/projekty/filip/vizualizace/1.jpg" class="w-100 h-auto" alt="">
+    <br />
+    <div class="container-fluid text-center">
+        <h2>Výkupní náklady</h2>
+        <h3>Nemovitost jsme koupili v dražbě za</h3>
+        <h4>750 000 Kč</h4>
+    </div>
+    <br />
+    <div class="container-fluid text-center" style="font-size: 3.5rem">
+        <h2>Náklady na rekonstrukci</h2>
+        <h3>Proběhla rekonstrukce všech místností za</h3>
+        <h4>450 000 Kč</h4>
+    </div>
+    <br />
+    <div class="container-fluid text-center" style="font-size: 3.5rem">
+        <h2>Prodáno</h2>
+        <h3>Nemovitost jsme prodali za</h3>
+        <h4 class="text-green-600 fw-bold" style="font-size: 24px">1 930 000 Kč</h4>
+    </div>
+    <hr class="my-5">
+    <h1 class="ps-4 fw-bold">Pomáháte nám plnit přání o vysněném bydlení</h1>
+    <p class="ps-4">Neděláme velké developerské projekty, které jsou velmi logisticky i finančně náročné.
+        Orientujeme se na nemovitosti s prodejní cenou kolem 2–3 mil.,
+        kde je největší kupní síla, a máme tak jistotu, že nemovitost rychle prodáme.</p>
+    <p class="ps-4">Bez nadsázky vdechujeme nový život objektům, které jsou mnohdy ve špatném technickém stavu.
+        Ale hlavně díky penězům investorů se nám daří dopřát nový domov čím dál více rodinám.</p>
+    <p class="ps-4 fw-bold">Za celý tým FIRI vám děkujeme!</p>
+    <img src="assets/images/thankyou.jpg" alt="" style="border-radius: 10px;
+                                                        width: 90%;
+                                                        margin: 20px auto;
+                                                        height: auto">
+</section>
+<section id="faq" class="primary mw-95 mx-auto">
+    <h2 class="ps-4 fw-bold text-center pt-5 mb-5" style="font-size: 26px">Často kladené otázky</h2>
+    <div id="accordion-collapse" data-accordion="collapse">
+        <h2 class="accordion-collapse-heading">
+            <button type="button" class="flex items-center justify-between w-full p-4 font-medium text-left text-gray-500 border border-b-0 border-gray-200 rounded-t-xl dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800" data-accordion-target="#accordion-collapse-body-1">
+                <span>Můžu o své peníze přijít?</span>
+                <svg data-accordion-icon class="w-6 h-6 rotate-180 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+            </button>
+        </h2>
+        <div id="accordion-collapse-body-1" class="hidden" aria-labelledby="accordion-collapse-heading-1">
+            <div class="p-3 font-light border border-b-0 border-gray-200 dark:border-gray-700 ">
+                <p class="mb-2 text-gray-500">Každá investice je spojena s určitou mírou rizika.
+                    Investice do nemovitostí je dlouhodobě považována za nejbezpečnější formu investování.
+                    Za peníze investorů jsou ihned nakupovány nové nemovitosti nebo jsou použity na realizace projektů.
+                    <br />
+                    Tím, že jsou nemovitosti nakupovány do majetku firmy pod tržní cenou a následnou opravou jsou dále
+                    zhodnocovány, hodnota všech nemovitostí, které FIRI vlastní, násobně převyšuje veškeré vklady
+                    investorů. Proto větším rizikem je nechávat volně peníze na bankovních účtech, kde vám je
+                    znehodnocuje inflace.</p>
+            </div>
+        </div>
+        <h2 class="accordion-collapse-heading">
+            <button type="button" class="flex items-center justify-between w-full p-4 font-medium text-left text-gray-500 border border-b-0 border-gray-200 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800" data-accordion-target="#accordion-collapse-body-2">
+                <span>Jakým způsobem se zhodnocují mé peníze?</span>
+                <svg data-accordion-icon class="w-6 h-6 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+            </button>
+        </h2>
+        <div id="accordion-collapse-body-2" class="hidden" aria-labelledby="accordion-collapse-heading-2">
+            <div class="p-3 font-light border border-b-0 border-gray-200 dark:border-gray-700">
+                <p class="mb-2 text-gray-500">1. Vykoupíme nemovitost v dražbě. Jedná se převážně
+                    o bankou zabavené nemovitosti, které „očistíme“ od zástav, poté nemovitost opravíme a následně
+                    prodáme. Celý proces trvá cca 1 rok.
+                    <br />
+                    2. Vykoupíme nemovitost od běžného prodávajícího, opravíme a opět nabídneme do prodeje.
+                    Díky tomu, že se zde nemusí řešit zástavy a vypořádání exekucí, celý proces trvá cca 6 měsíců.
+                    <br />
+                    3. Koupíme větší nemovitost ve špatném technickém stavu, uděláme kompletní rekonstrukci a
+                    vytvoříme zde několik bytů nebo apartmánů, které následně nabídneme k prodeji. Tento proces
+                    je sice časově nejnáročnější, cca 18 měsíců, ale vznikají tak úplně nové a moderní bytové
+                    jednotky, o které je obrovský zájem.</p>
+            </div>
+        </div>
+        <h2 class="accordion-collapse-heading">
+            <button type="button" class="flex items-center justify-between w-full p-4 font-medium text-left text-gray-500 border border-b-0 border-gray-200 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800" data-accordion-target="#accordion-collapse-body-3">
+                <span>Jakou minimální částku mohu investovat?</span>
+                <svg data-accordion-icon class="w-6 h-6 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+            </button>
+        </h2>
+        <div id="accordion-collapse-body-3" class="hidden" aria-labelledby="accordion-collapse-heading-3">
+            <div class="p-3 font-light border border-b-0 border-gray-200 dark:border-gray-700">
+                <p class="mb-2 text-gray-500">Dluhopis je v hodnotě 100 000 Kč, proto investor
+                    může vložit peníze v násobku této částky a může si vybrat jestli po dobu 3, nebo 5 let.</p>
+            </div>
+        </div>
+        <h2 class="accordion-collapse-heading">
+            <button type="button" class="flex items-center justify-between w-full p-4 font-medium text-left text-gray-500 border border-b-0 border-gray-200 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800" data-accordion-target="#accordion-collapse-body-4">
+                <span>Co když chci investovat na delší dobu než 5 let?</span>
+                <svg data-accordion-icon class="w-6 h-6 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+            </button>
+        </h2>
+        <div id="accordion-collapse-body-4" class="hidden" aria-labelledby="accordion-collapse-heading-4">
+            <div class="p-3 font-light border border-b-0 border-gray-200 dark:border-gray-700">
+                <p class="mb-2 text-gray-500">Takové požadavky lze řešit individuálně, stačí <a href="mailto:TODO">napsat na náš e-mail</a> nebo <a href="tel:TODO">zavolat</a> a rádi s vámi vše probereme.</p>
+            </div>
+        </div>
+        <h2 class="accordion-collapse-heading">
+            <button type="button" class="flex items-center justify-between w-full p-4 font-medium text-left text-gray-500 border border-b-0 border-gray-200 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800" data-accordion-target="#accordion-collapse-body-5">
+                <span>Co když potřebuju peníze vybrat dřív?</span>
+                <svg data-accordion-icon class="w-6 h-6 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+            </button>
+        </h2>
+        <div id="accordion-collapse-body-5" class="hidden" aria-labelledby="accordion-collapse-heading-5">
+            <div class="p-3 font-light border border-b-0 border-gray-200 dark:border-gray-700">
+                <p class="mb-2 text-gray-500">Dluhopis je cenný papír, který lze komukoliv prodat,
+                    takže buď si můžete sami najít kupce a informovat nás o tom, nebo vám pomůžeme my.
+                    Zhodnocení budete mít pak poměrově za období, po které jste dluhopis vlastnili.</p>
+            </div>
+        </div>
+        <h2 class="accordion-collapse-heading">
+            <button type="button" class="flex items-center justify-between w-full p-4 font-medium text-left text-gray-500 border border-b-0 border-gray-200 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800" data-accordion-target="#accordion-collapse-body-6">
+                <span>Co když bude cena nemovitostí klesat?</span>
+                <svg data-accordion-icon class="w-6 h-6 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+            </button>
+        </h2>
+        <div id="accordion-collapse-body-6" class="hidden" aria-labelledby="accordion-collapse-heading-6">
+            <div class="p-3 font-light border border-b-0 border-gray-200 dark:border-gray-700">
+                <p class="mb-2 text-gray-500">Pokud cena nemovitostí půjde dolů, nemá to na náš styl
+                    byznysu nijak zásadní vliv, protože o to levněji zase nemovitosti nakoupíme.</p>
+            </div>
+        </div>
+        <h2 class="accordion-collapse-heading">
+            <button type="button" class="flex items-center justify-between w-full p-4 font-medium text-left text-gray-500 border border-b-0 border-gray-200 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800" data-accordion-target="#accordion-collapse-body-7">
+                <span>Co je to dluhopis?</span>
+                <svg data-accordion-icon class="w-6 h-6 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+            </button>
+        </h2>
+        <div id="accordion-collapse-body-7" class="hidden" aria-labelledby="accordion-collapse-heading-7">
+            <div class="p-3 font-light border border-b-0 border-gray-200 dark:border-gray-700">
+                <p class="mb-2 text-gray-500"><b>Dluhopis</b> (obligace, bond) je cenný papír
+                    zavazující emitenta ( FI Realitní Investice) vyplatit jeho majiteli peněžní obnos uvedený v
+                    dokladu včetně příslušného úroku, a to ve vyznačeném termínu.</p>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="contact">
+    <div class="mw-95 mx-auto text-white text-6xl">
+        <h2 class="pt-4 fw-bold">Matěj Tichý</h2>
+        <h3 class="text-green-700 underline inline-flex">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white" viewBox="0 0 16 16">
+                <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+            </svg>
+            <a href="tel:+420725879471" class="ps-3">+420 725 879 471</a></h3>
+        <p class="fw-bold py-3 rounded">Spojme se!</p>
+        <form class="mb-5 text-xl">
+            <div class="mb-6">
+                <label for="email" class="block mb-2 font-medium">Váš e-mail</label>
+                <input type="email" id="email" class="bg-gray-50 border border-gray-300 text-xl rounded-lg block w-full p-2.5" placeholder="jan@novak.cz" required>
+            </div>
+            <div class="mb-6">
+                <label for="name" class="block mb-2 font-medium">Vaše jméno</label>
+                <input type="text" id="name" class="bg-gray-50 border border-gray-300 text-xl rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" placeholder="Jan Novák" required>
+            </div>
+            <div class="mb-6">
+                <label for="message" class="block mb-2 font-medium">Vaše zpráva</label>
+                <textarea rows="4" type="text" id="message" class="bg-gray-50 border border-gray-300 text-xl text-black rounded-lg block w-full p-2.5" placeholder="Dobrý den..."></textarea>
+            </div>
+            <button type="submit" class="text-white font-medium rounded-lg text-xl w-full sm:w-auto px-5 py-2.5 mb-5 text-center" style="background-color: #8d887a">Odeslat</button>
+        </form>
+    </div>
+</section>
+<footer>
+    <div class="container-fluid">
+        <div class="row">
+            <p>&copy; 2022 | <a href="https://github.com/MarvelousMartin" style="color: white; text-decoration: none">Martin Dub</a></p>
+        </div>
+    </div>
+</footer>
 </body>
+</html>

@@ -28,6 +28,7 @@ h2 {
 
 .btn-primary {
     background-color: darkgreen !important;
+    border: 0 !important;
 }
 
 .navbar {
@@ -45,16 +46,12 @@ h2 {
     z-index: 100;
     min-width: 5vh;
     height: 5vh;
-    margin: 0 40px;
+    margin-right: 20px;
     border: 0;
 }
 
-#dropdown {
-    z-index: 99;
-}
-
 #dropdown ul li a {
-    font-size: 40px;
+    font-size: 20px;
 }
 
 #dropdownButton {
@@ -65,34 +62,17 @@ h2 {
     color: #fff;
 }
 
-#hero {
-    z-index: -100;
-}
-
 #heroImg {
-    position: absolute;
     z-index: -1;
 }
 
-#overlay {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.6);
-    color: #ffffff;
-}
-
 .header-title {
+    text-align: center;
     position: absolute;
     color: white;
     -webkit-text-stroke: 2px black;
-    font-size: 4em;
+    font-size: 2em;
     font-weight: bold;
-    top: 500px;
-}
-
-#intro {
-    margin-top: 560px;
 }
 
 #introDesc {
@@ -100,19 +80,19 @@ h2 {
 }
 
 .intro-number {
-    font-size: 5em;
+    font-size: 2.5em;
     font-weight: bold;
     color: #8d887a;
 }
 
 .intro-title {
-    font-size: 3.5em;
+    font-size: 1.5em;
     font-weight: bold;
     color: #0f2232;
 }
 
 .intro-desc {
-    font-size: 2.5rem;
+    font-size: 1rem;
 }
 
 .icon-check {
@@ -124,11 +104,11 @@ h2 {
 }
 
 .text-check {
-    font-size: 3rem;
+    font-size: 1.5rem;
 }
 
 .table-fs {
-    font-size: 2.5rem;
+    font-size: 18px;
 }
 
 .table-green {
@@ -142,9 +122,10 @@ h2 {
 #green-bubble {
     background-color: #efe;
     border-radius: 10px;
-    font-size: 3rem;
+    font-size: 18px;
     width: 90%;
     margin: 20px auto 0 auto;
+    border: 0 !important;
 }
 
 #green-bubble p {
@@ -153,44 +134,58 @@ h2 {
 }
 
 #RD h1 {
-    font-size: 60px;
+    font-size: 30px;
     font-weight: bold;
 }
 
 #RD h2 {
-    font-size: 48px;
+    font-size: 24px;
     font-weight: bold;
 }
 
 #RD h3 {
-    font-size: 40px;
+    font-size: 20px;
 }
 
 #RD h4 {
     margin: 10px 0;
-    font-size: 45px;
+    font-size: 18px;
     font-weight: bold;
 }
 
 #RD p {
-    font-size: 3rem;
+    font-size: 18px;
 }
 
 #faq {
     background-color: #fcfaf6;
-    height: 2200px;
+    height: 1300px;
 }
 
 #faq p {
-    font-size: 40px;
+    font-size: 18px;
 }
 
-.accordion-collapse-heading {
-    font-size: 40px;
+#faq span {
+    font-size: 18px;
 }
 
 #contact {
     background-color: #0f2232 !important;
+}
+
+#contact h2 {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+#contact a {
+    font-size: 22px;
+    text-decoration: none;
+}
+
+#contact p {
+    font-size: 32px;
 }
 
 footer {
@@ -198,6 +193,6 @@ footer {
     color: white;
     padding: 20px;
     text-align: center;
-    font-size: 30px;
+    font-size: 15px;
     font-weight: bold;
 }
