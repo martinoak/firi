@@ -18,6 +18,11 @@ h2 {
     font-size: 3.5rem;
 }
 
+#logo {
+    width: 200px;
+    height: auto;
+}
+
 .primary {
     color: #0f2232
 }
