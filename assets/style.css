@@ -175,12 +175,53 @@ h2 {
 
 #RD h4 {
     margin: 10px 0;
+    padding-bottom: 5px;
     font-size: 18px;
     font-weight: bold;
 }
 
 #RD p {
     font-size: 18px;
+}
+
+#RD-height {
+    height: 38rem;
+}
+
+@media screen and (min-width: 400px) {
+    #RD-height {
+        height: 42rem;
+    }
+}
+
+@media screen and (min-width: 520px) {
+    #RD-height {
+        height: 45rem;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    #RD-height {
+        height: 50rem;
+    }
+}
+
+@media screen and (min-width: 730px) {
+    #RD-height {
+        height: 55rem;
+    }
+}
+
+@media screen and (min-width: 860px) {
+    #RD-height {
+        height: 60rem;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    #RD-height {
+        height: 65rem;
+    }
 }
 
 #thankyouImg {
@@ -267,7 +308,7 @@ footer {
     }
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 990px) {
     #intro {
         display: none !important;
     }
