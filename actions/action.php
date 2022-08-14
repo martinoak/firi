@@ -17,9 +17,14 @@ if ($_POST["name"] and $_POST["email"] and $_POST["textmessage"]) {
     $content_email = $_POST["email"];
     $content_textMessage = $_POST["textmessage"];
 }
+else {
+    $content_name = "Špatné jméno";
+    $content_email = "Špatný e-mail";
+    $content_textMessage = "Špatný text";
+}
 
 $content_body = '<b>Přišla nová zpráva:</b><br />
-                Poptávající: ' . $content_name . '<br />
+                Od: ' . $content_name . '<br />
                 Text zprávy:<br><br>' . $content_textMessage . '<br />';
 
 try {
