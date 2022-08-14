@@ -297,7 +297,6 @@ footer {
     }
 
     #accordion-collapse {
-        max-width: 75% !important;
         margin: auto;
     }
 
